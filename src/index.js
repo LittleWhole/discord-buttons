@@ -14,7 +14,7 @@ version = parseInt(version[0] + version[1]);
 
 module.exports = (client) => {
   if (version != 12) {
-    throw new Error('The discord.js version must be v12 or high');
+    throw new Error('The discord.js version must be v12 or higher.');
   }
 
   if (!client || !client instanceof Client) throw new Error("INVALID_CLIENT_PROVIDED: The Discord.js Client isn't provided or it's invalid.");
